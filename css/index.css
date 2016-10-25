@@ -1,0 +1,422 @@
+/********************************
+		General Styling 
+********************************/
+
+body{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-size: 16px;
+	color: #333;
+	font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4, h5{
+	font-family: 'Bitter', serif;
+}
+
+a{
+	text-decoration: none;
+}
+
+i{
+	padding: 0 1rem !important;
+}
+
+.button{
+	background-color: #e24d54; 
+	border: none;
+	color: #fff;
+	font-size: 1rem;
+	padding: .5rem 1rem;
+	border-radius: 1rem;
+}
+
+.button:hover{
+	background-color: #c84549;
+}
+
+.banner, .contact{
+	height: 29rem;
+}
+
+.content-wrapper{
+	width: 75%;
+	margin: 0 auto;
+}
+
+.content-wrapper h3{
+	font-weight: normal;
+	font-size: 1.5rem;
+}
+
+.intro-text,
+.intro-image,
+.summary-text
+{
+	margin-top: 3.5rem;
+	width: 40%;
+}
+
+/********************************
+		Header Styling 
+********************************/
+
+header{
+	background-color: #fff;
+	height: 3.1em;
+}
+
+header .logo{
+	float: left;
+	padding: 1rem;
+}
+
+a{
+	color: #333;
+}
+
+header nav{
+	float: right;
+	list-style: none;
+	margin-right: 1rem;
+}
+
+header ul{
+	margin: 0;
+}
+
+nav .selected{
+	padding: .5rem 0;
+	border-bottom: 2.5px solid #418CF7;
+}
+
+nav li{
+	display: inline-block;
+	margin-top: .4rem;
+	padding: .5rem;
+}
+
+nav li:hover{
+	background-color: #f6f6f6;
+}
+
+/********************************
+		Banner Styling 
+********************************/
+
+.banner{
+/*	background-color: #7ecfd8;
+	border: 1px solid #7ecfd8;*/
+	background-image: url("../images/blue-library.jpg");
+   	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.banner-content-wrapper{
+	position: relative;
+}
+
+.banner-name{
+	height: 16rem;
+	width: 13rem;
+	background-color: #fff;
+	padding: 2rem 2rem;
+	position: absolute;
+	top: 2.75rem;
+	left: 16%;
+	z-index: 2;
+}
+
+.banner-rectangle{
+	height: 16rem;
+	width: 13rem;
+	border: 3px solid #fff;
+	padding: 2rem 2rem;
+	position: absolute;
+	top: 4.5rem;
+	left: 18.5%;
+	z-index: 1;
+}
+
+.banner-name h1{
+	margin: 0;
+	font-size: 2.5rem;
+	font-weight: normal;
+}
+
+.banner-name h3{
+	margin: 8rem 0 0 0;
+	font-size: 1.25rem;
+	font-weight: normal;
+}
+
+h2{
+	font-size: 2rem;
+	color: #418CF7;
+	margin: 0;
+}
+
+/********************************
+		Intro Styling 
+********************************/
+
+.intro{
+	height: 30rem;
+}
+
+.intro-image{
+	width: 18rem;
+	position: absolute;
+	top: 31.25rem;
+	right: 20rem;
+	box-shadow: -3px -3px 12px #F1F1F1;
+	z-index: 2;
+}
+
+.intro-rectangle{
+	width: 18rem;
+	height: 21.85rem;
+	position: absolute;
+	top: 37rem;
+	right: 17.5rem;
+	background-color: #7ecfd8;
+	z-index: 1;
+}
+
+.intro{
+	background-color: #fff;
+	clear: both;
+}
+
+.intro-text{
+	margin-left: 5%;
+	float: left;
+	line-height: 2.2rem;
+}
+
+.intro p{
+	font-size: 1.2rem;
+}
+
+/********************************
+		Skills Styling 
+********************************/
+
+.skills{
+	background-color: #7ecfd8;
+	border: 1px solid #7ecfd8;
+}
+
+.skills-content-wrapper{
+	position: relative;
+	padding-bottom: 3rem;
+}
+
+.skills-header{
+	margin: 0 5%;
+}
+
+.skills-header{
+	padding: 3rem 0;
+}
+
+.skills h2{
+	float: left;
+	color: #fff;
+}
+
+.resume-button{
+	background-color: #e24d54;
+	float: right;
+}
+
+.skills-text{
+	margin-top: 2rem;
+	color: #fff;
+	font-size: 1.25rem;
+	clear: both;
+}
+
+.skill-point{
+	display: inline-block;
+	width: 24.5%;
+	text-align: center;
+}
+
+.skill-icon{
+	width: 5rem;
+}
+
+h5{
+	font-weight: normal;
+	font-size: 1.25rem;
+	margin: .25rem 1.5rem 0;
+	padding: .5rem 0;
+	border-bottom: 2px solid #fff;
+}
+
+.skills p{
+	font-size: 1rem;
+	line-height: 1.5rem;
+	padding: 0 1rem;
+}
+
+/********************************
+		Portfolio Styling 
+********************************/
+
+
+.work{
+	background-color: #fff;
+	border: 1px solid #fff;
+}
+
+.work-header, .project-box, .project-sub-header{
+	margin: 0 5% auto;
+}
+
+.work-header{
+	margin-top: 3.5rem;
+	margin-bottom: 2rem;
+	border: 1px solid #fff;
+}
+
+.work-title{
+	float: left;
+}
+
+.work-button{
+	float: right;
+}
+
+.project-sub-header{
+	clear: both;
+	padding: .25rem;
+	margin-top: 3em;
+	border-bottom: 1px solid #333;
+}
+
+.project-box{
+	margin-top: 2rem;
+	margin-bottom: 5rem;
+	box-shadow: 3px 3px 12px #F1F1F1;
+	text-align: center;
+}
+
+.column-1, .column-2, .column-3{
+	margin-top: 0;
+	display: inline-block;
+	vertical-align: top;
+	width: 33%;
+}
+
+.project{
+	position: relative;
+	overflow: hidden;
+}
+
+.project-image{
+	width: 100%;
+	margin-bottom: 1rem;
+	padding: 0 .5rem;
+}
+
+.project h4{
+	font-size: 1.25rem;
+	margin: 0;
+	padding: .25rem 0;
+	border-bottom: 2px solid #333;
+}
+
+.project-hover-text{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0; 
+	left: 0;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	line-height: 1.5rem;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: rgba(255, 255, 255, .85);
+}
+
+.project-hover-text {
+	opacity: 0;
+	transition: opacity .5s;
+}
+.project-hover-text:hover {
+	opacity: 1;
+}
+
+/********************************
+		Contact Styling 
+********************************/
+
+.contact{
+	background-color: #F1F1F1;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+}
+
+.email, .number, .linkedin{
+	text-align: center;
+	padding: 1rem;
+	background-color: #fff;
+	width: 33.3333%;
+	color: #fff;
+	font-weight: bold;
+}
+
+.email{
+	background-color: #418CF7;
+}
+
+.number{
+	background-color: #e24d54;
+}
+
+.linkedin{
+	background-color: #7ecfd8;
+}
+
+footer{
+	text-align: center;
+	height: 1.25rem;
+	padding: 1rem;
+	background-color: #fff;
+}
+
+
+/********************************
+		Projects Page Styling 
+********************************/
+.projects-header, .projects-footer{
+	background-color: #418CF7;
+}
+
+.projects-header li, .projects-footer{
+	color: #fff;
+}
+
+.projects-header li:hover{
+	color: #333;
+	font-weight: bold;
+	background-color: #418CF7;
+}
+
+.projects-header .selected{
+	border-bottom: 2.5px solid #fff;
+}
+
+
+
+
+
+
