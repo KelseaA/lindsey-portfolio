@@ -36,8 +36,8 @@ i{
 	background-color: #c84549;
 }
 
-.banner, .contact{
-	height: 29rem;
+.banner, .intro, .skills, .contact{
+	height: 33rem;
 }
 
 .content-wrapper{
@@ -50,13 +50,27 @@ i{
 	font-size: 1.5rem;
 }
 
-.intro-text,
-.intro-image,
-.summary-text
-{
-	margin-top: 3.5rem;
-	width: 40%;
-}
+/********************************
+	Back to Top Button Styling 
+********************************/
+.back-to-top {
+ 	margin: 0;
+ 	position: fixed;
+ 	bottom: 1rem;
+ 	right: 1rem;
+ 	z-index: 100;
+ 	display: none;
+ 	text-decoration: none;
+ 	color: #e24d54;
+ }
+ .back-to-top img{
+ 	width: 70px;
+ 	height: 70px;
+ }
+  
+.back-to-top i {
+   font-size: 60px;
+ }
 
 /********************************
 		Header Styling 
@@ -64,12 +78,13 @@ i{
 
 header{
 	background-color: #fff;
-	height: 3.1em;
+	height: 4.5em;
 }
 
 header .logo{
 	float: left;
-	padding: 1rem;
+	padding: .25rem .75rem;
+	height: 4rem;
 }
 
 a{
@@ -93,8 +108,8 @@ nav .selected{
 
 nav li{
 	display: inline-block;
-	margin-top: .4rem;
-	padding: .5rem;
+	margin-top: .7rem;
+	padding: 1rem .5rem;
 }
 
 nav li:hover{
@@ -123,7 +138,7 @@ nav li:hover{
 	background-color: #fff;
 	padding: 2rem 2rem;
 	position: absolute;
-	top: 2.75rem;
+	top: 5.75rem;
 	left: 16%;
 	z-index: 2;
 }
@@ -134,7 +149,7 @@ nav li:hover{
 	border: 3px solid #fff;
 	padding: 2rem 2rem;
 	position: absolute;
-	top: 4.5rem;
+	top: 7.5rem;
 	left: 18.5%;
 	z-index: 1;
 }
@@ -161,14 +176,16 @@ h2{
 		Intro Styling 
 ********************************/
 
-.intro{
-	height: 30rem;
+.intro-text
+{
+	margin-top: 4.5rem;
+	width: 40%;
 }
 
 .intro-image{
 	width: 18rem;
 	position: absolute;
-	top: 31.25rem;
+	top: 40.75rem;
 	right: 20rem;
 	box-shadow: -3px -3px 12px #F1F1F1;
 	z-index: 2;
@@ -178,7 +195,7 @@ h2{
 	width: 18rem;
 	height: 21.85rem;
 	position: absolute;
-	top: 37rem;
+	top: 43rem;
 	right: 17.5rem;
 	background-color: #7ecfd8;
 	z-index: 1;
@@ -218,7 +235,7 @@ h2{
 }
 
 .skills-header{
-	padding: 3rem 0;
+	padding: 4rem 0;
 }
 
 .skills h2{
@@ -395,25 +412,150 @@ footer{
 
 
 /********************************
-		Projects Page Styling 
+		Pages Styling 
 ********************************/
-.projects-header, .projects-footer{
+.pages-header, .pages-footer{
 	background-color: #418CF7;
 }
 
-.projects-header li, .projects-footer{
+.pages-header li, .pages-footer{
 	color: #fff;
+	clear: both;
 }
 
-.projects-header li:hover{
+.pages-header li:hover{
 	color: #333;
 	font-weight: bold;
 	background-color: #418CF7;
 }
 
-.projects-header .selected{
+.pages-header .selected{
 	border-bottom: 2.5px solid #fff;
 }
+
+
+/********************************
+		Projects Page Styling 
+********************************/
+
+
+
+
+/********************************
+		Resume Page Styling 
+********************************/
+.resume-title h2{
+	margin-top: 3rem;
+	margin-bottom: 2.5rem;
+	border-bottom: 3px solid #418CF7;
+}
+
+.resume-header{
+	margin-top: 3.5rem;
+	margin-bottom: 2rem;
+}
+
+.resume-column-1{
+	max-width: 68%;
+	float: left;
+	margin-bottom: 1rem;
+	padding-right: 3rem;
+	border-right: 1px solid #418CF7;
+}
+
+.resume-column-2{
+	max-width: 28%;
+	float: right;
+}
+
+.resume-column-1 h3{
+	padding: 0;
+	margin: 0;
+}
+
+.list-1, .list-2, .list-3{
+	overflow: hidden;
+	margin-bottom: 1rem;
+}
+
+.list-2, .list-3{
+	padding-top: 1rem;
+	border-top: 1px solid #418CF7;
+}
+
+.resume-header{
+	float: left;
+	width: 20%;
+	font-size: 1.25rem !important;
+	border: none;
+	color: #7ecfd8;
+}
+
+.resume-info{
+	float: right;
+	width: 75%;
+	padding-left: 1.25rem;
+}
+
+.resume-info p{
+	margin: 0;
+}
+
+.resume-info h4{
+	margin: 0;
+}
+
+.resume-info ul{
+	margin: .75rem;
+}
+
+.list-1 p, .list-2 p, .list-3 p{
+	line-height: 1.5rem;
+}
+.list-2 ul{
+	line-height: 1.5rem;
+}
+
+.list-3 h4{
+	margin-bottom: .75rem;
+}
+
+.list-2 h4, .list-3 h4{
+	font-weight: normal;
+}
+
+.resume{
+	margin-bottom: 3rem;
+	overflow: hidden;
+}
+
+.resume-column-2{
+	padding: 0 .75rem .75rem;
+}
+
+.resume-column-2 h3{
+	font-size: 1.25rem;
+	border: none;
+	color: #7ecfd8;
+	margin: 0 0 .5rem;
+}
+
+.resume-column-2 ul{
+	margin: 0;
+	list-style: none;
+	padding-left: 1.5rem;
+	line-height: 1.5rem;
+}
+
+.resume-lists h3{
+	margin-top: 1.25rem;
+}
+
+
+
+
+
+
 
 
 
