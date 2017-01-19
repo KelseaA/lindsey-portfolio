@@ -1,6 +1,9 @@
 /********************************
 		General Styling 
 ********************************/
+*:focus{
+	outline: none;
+}
 
 body{
 	padding: 0;
@@ -36,7 +39,7 @@ i{
 	background-color: #c84549;
 }
 
-.banner, .intro, .skills, .contact{
+.banner, .intro, .skills{
 	height: 33rem;
 }
 
@@ -121,8 +124,6 @@ nav li:hover{
 ********************************/
 
 .banner{
-/*	background-color: #7ecfd8;
-	border: 1px solid #7ecfd8;*/
 	background-image: url("../images/blue-library.jpg");
    	background-repeat: no-repeat;
     background-attachment: fixed;
@@ -232,9 +233,6 @@ h2{
 
 .skills-header{
 	margin: 0 5%;
-}
-
-.skills-header{
 	padding: 4rem 0;
 }
 
@@ -377,6 +375,15 @@ h5{
 
 .contact{
 	background-color: #F1F1F1;
+}
+
+.contact-content-wrapper{
+	margin: 5% 15%;
+	width: 40%;
+	background-color: red;
+}
+
+.contact-bar{
 	display: flex;
 	flex-direction: row;
 	align-items: flex-end;
