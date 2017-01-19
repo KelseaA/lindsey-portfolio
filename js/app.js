@@ -1,5 +1,9 @@
 //smooth scroll
 $(document).ready(function(){
+  //contact form
+  var contactform =  document.getElementById('contactform');
+  contactform.setAttribute('action', '//formspree.io/' + 'lindsey.b.anderson' + '@' + 'gmail' + '.' + 'com');
+
   // Add smooth scrolling to all links
   $('.smooth-scroll-link').on('click', function(event) {
 
