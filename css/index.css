@@ -49,6 +49,9 @@ i{
 
 .content-wrapper{
 	width: 75%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 	margin: 0 auto;
 }
 
@@ -143,8 +146,8 @@ nav li:hover{
 	background-color: #fff;
 	padding: 2rem 2rem;
 	position: absolute;
-	top: 5.75rem;
-	left: 16%;
+	top: 5.5rem;
+	left: 18%;
 	z-index: 2;
 }
 
@@ -155,7 +158,7 @@ nav li:hover{
 	padding: 2rem 2rem;
 	position: absolute;
 	top: 7.5rem;
-	left: 18.5%;
+	left: 20.5%;
 	z-index: 1;
 }
 
@@ -184,37 +187,19 @@ h2{
 .intro-text
 {
 	margin-top: 4.5rem;
-	width: 40%;
+	width: 45%;
+	line-height: 2.2rem;
 }
 
 .intro-image{
 	width: 18rem;
-	position: absolute;
-	top: 40.75rem;
-	right: 20rem;
-	box-shadow: -3px -3px 12px #F1F1F1;
-	z-index: 2;
-}
-
-.intro-rectangle{
-	width: 18rem;
-	height: 21.85rem;
-	position: absolute;
-	top: 43rem;
-	right: 17.5rem;
-	background-color: #7ecfd8;
-	z-index: 1;
+	box-shadow: -3px -3px 12px #F1F1F1,
+				2.5rem 2.5rem 0 #73cfd8;
+	align-self: center;
 }
 
 .intro{
 	background-color: #fff;
-	clear: both;
-}
-
-.intro-text{
-	margin-left: 5%;
-	float: left;
-	line-height: 2.2rem;
 }
 
 .intro p{
@@ -231,13 +216,13 @@ h2{
 }
 
 .skills-content-wrapper{
-	position: relative;
 	padding-bottom: 3rem;
+	flex-direction: column;
 }
 
 .skills-header{
-	margin: 0 5%;
 	padding: 4rem 0;
+	margin: 0 6% auto;
 }
 
 .skills h2{
@@ -268,12 +253,12 @@ h5{
 	margin: 1rem 1.5rem 0;
 	padding: .5rem 0;
 }
-
+/*
 .skills p{
 	font-size: 1rem;
 	line-height: 1.5rem;
 	padding: 0 1rem;
-}
+}*/
 
 /********************************
 		Portfolio Styling 
@@ -285,8 +270,12 @@ h5{
 	border: 1px solid #fff;
 }
 
+.work-content-wrapper{
+	flex-direction: column;
+}
+
 .work-header, .project-box, .project-sub-header{
-	margin: 0 5% auto;
+	margin: 0 6% auto;
 }
 
 .work-header{
@@ -374,8 +363,7 @@ h5{
 }
 
 .contact-content-wrapper{
-	width: 75%; 
-	margin: 0 auto;
+	flex-direction: column;
 	padding-bottom: 2rem;
 }
 .contact-content-wrapper h2{
