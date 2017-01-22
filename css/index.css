@@ -24,6 +24,7 @@ h5{
 
 a{
 	text-decoration: none;
+	color: #333;
 }
 
 i{
@@ -54,7 +55,8 @@ i{
 	height: 33rem;
 }
 
-.content-wrapper{
+.content-wrapper,
+.header-nav{
 	width: 75%;
 	display: flex;
 	flex-direction: row;
@@ -71,6 +73,12 @@ i{
 .work-content-wrapper,
 .contact-content-wrapper{
 	flex-direction: column;
+}
+
+.resume,
+.work-content-wrapper{
+	width: 70%;
+	margin: 0 auto;
 }
 
 /********************************
@@ -99,45 +107,55 @@ i{
 		Header Styling 
 ********************************/
 
+.header-nav{
+	width: 100%;
+	justify-content: space-between;
+}
+
+.hamburger{
+	display: none;
+}
+
 header{
 	background-color: #fff;
 	height: 4.5em;
 }
 
 header .logo{
-	float: left;
 	padding: .25rem .75rem;
 	height: 4rem;
 }
 
-a{
-	color: #333;
+nav li a{
+	padding: 1rem .4rem;
 }
 
 header nav{
-	float: right;
 	list-style: none;
 	margin-right: 1rem;
 }
 
 header ul{
 	margin: 0;
+	margin-right: .5rem;
+	padding-left: 0;
 }
 
 nav .selected{
-	padding: .5rem 0;
+	margin-top: .5rem;
+	padding: 1rem .4rem;
 	border-bottom: 2.5px solid #418CF7;
 }
 
 nav li{
 	display: inline-block;
-	margin-top: .7rem;
-	padding: 1rem .5rem;
+	margin-top: .5rem;
+	padding: 1rem .4rem;
 }
 
-nav li:hover{
-	background-color: #f6f6f6;
-}
+/*nav li:hover{
+	border-bottom: 2.5px solid #418CF7;
+}*/
 
 /********************************
 		Banner Styling 
@@ -503,6 +521,7 @@ footer{
 /********************************
 		Resume Page Styling 
 ********************************/
+
 .resume-title h2{
 	margin-top: 3rem;
 	margin-bottom: 2.5rem;
@@ -685,7 +704,7 @@ footer{
 	    font-size: 1.1rem;
 	}
 	.intro-image {
-	    width: 20rem;
+	    width: 18rem;
 	}
 	.skill-icon {
 	    width: 5rem;
@@ -711,6 +730,41 @@ footer{
 	}
 	.contact-area {
 	    width: 90%;
+	}
+
+	/*hamburger menu styling*/
+	.main-nav{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		text-align: center;
+	}
+	.hamburger{
+		cursor: pointer;
+		padding: 25px 15px;
+		display: block;
+	}
+	.line{
+		border-bottom: 4px solid #bbb;
+		width: 35px;
+		margin-bottom: 6px;
+	}
+	.line:last-child{
+		margin-bottom: 0;
+	}
+	nav ul{
+		margin-top: -2px;
+	}
+	nav li{
+		width: 100%;
+		background-color: #bbb;
+		margin: 0;
+	}
+	nav .selected{
+		margin-top: 0;
+		padding: 1rem .4rem;
+		border-bottom: none;
+		background-color: blue;
 	}
 }
 
