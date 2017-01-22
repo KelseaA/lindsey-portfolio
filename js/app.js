@@ -1,5 +1,14 @@
 //smooth scroll
 $(document).ready(function(){
+  //adds selected class to nav menu
+  $("nav li").hover(function(){
+    $(this).toggleClass("selected");
+  });
+
+
+  //toggle hamburger menu
+
+
   //contact form
   var contactform =  document.getElementById('contactform');
   contactform.setAttribute('action', '//formspree.io/' + 'lindsey.b.anderson' + '@' + 'gmail' + '.' + 'com');
