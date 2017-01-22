@@ -14,7 +14,11 @@ body{
 	font-family: 'Raleway', sans-serif;
 }
 
-h1, h2, h3, h4, h5{
+h1,
+h2,
+h3,
+h4,
+h5{
 	font-family: 'Bitter', serif;
 }
 
@@ -39,11 +43,14 @@ i{
 	background-color: #c84549;
 }
 
-.resume-button, .work-button{
+.resume-button,
+.work-button{
 	float: right;
 }
 
-.banner, .intro, .skills{
+.banner,
+.intro,
+.skills{
 	height: 33rem;
 }
 
@@ -58,6 +65,12 @@ i{
 .content-wrapper h3{
 	font-weight: normal;
 	font-size: 1.5rem;
+}
+
+.skills-content-wrapper,
+.work-content-wrapper,
+.contact-content-wrapper{
+	flex-direction: column;
 }
 
 /********************************
@@ -217,7 +230,6 @@ h2{
 
 .skills-content-wrapper{
 	padding-bottom: 3rem;
-	flex-direction: column;
 }
 
 .skills-header{
@@ -235,11 +247,12 @@ h2{
 	color: #fff;
 	font-size: 1.25rem;
 	clear: both;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
 
 .skill-point{
-	display: inline-block;
-	width: 24.5%;
 	text-align: center;
 }
 
@@ -270,11 +283,9 @@ h5{
 	border: 1px solid #fff;
 }
 
-.work-content-wrapper{
-	flex-direction: column;
-}
-
-.work-header, .project-box, .project-sub-header{
+.work-header,
+.project-box,
+.project-sub-header{
 	margin: 0 6% auto;
 }
 
@@ -419,16 +430,12 @@ input.submit-button{
 	float: right;
 	margin-right: -.5rem;
 }
-/*input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0px 1000px white inset;
-}*/
 
 /********************************
 		Contact Bar Styling 
 ********************************/
 
 .contact-bar{
-/*	margin-top: 4rem;*/
 	display: flex;
 	flex-direction: row;
 	align-items: flex-end;
@@ -604,6 +611,112 @@ footer{
 }
 
 
+/********************************
+		Media Queries 
+********************************/
+@media only screen and (max-width: 1250px) {
+	.project-box{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.column-1,
+	.column-2,
+	.column-3{
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 955px) {
+	.banner-rectangle {
+	    top: 7.25rem;
+	    left: 21.5%;
+	}
+	.contact-bar {
+    	flex-direction: column;
+    	align-items: center;
+	}
+	.email,
+	.number,
+	.linkedin{
+		width: 100%;
+	}
+	.intro-text, .contact-column1 {
+		font-size: .75rem;
+	    line-height: 2rem;
+	}
+	.intro-image {
+	    width: 15rem;
+	}
+}
+
+@media only screen and (max-width: 825px) {
+	.content-wrapper{
+		width: 85%;
+	}
+	.banner-name {
+	    top: 5.5rem;
+	    left: 13%;
+	}
+	.banner-rectangle {
+	    top: 7.5rem;
+	    left: 17.5%;
+	}
+	.intro{
+		height: 60rem;
+	}
+	.intro-content-wrapper{
+		width: 85%;
+		flex-direction: column;
+		align-items: center;
+	}
+	.intro-text {
+	    width: 90%;
+	}
+	.intro-image {
+	    width: 23rem;
+	    margin-top: 2rem;
+	}
+}
+
+@media only screen and (max-width: 620px){
+	.intro-text {
+	    line-height: 1.9rem;
+	    font-size: 1.1rem;
+	}
+	.intro-image {
+	    width: 20rem;
+	}
+	.skill-icon {
+	    width: 5rem;
+	}
+	h5 {
+	    font-size: 1rem;
+	    margin: 1rem 1.5rem 0;
+	    padding: .5rem 0;
+	}
+	.contact-columns{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.contact-p {
+	    width: 100%;
+	    margin: 0 auto;
+	    line-height: 1.8rem;
+	    font-size: 1.1rem;
+	}
+	.contact-column1 {
+	    width: 90%;
+	}
+	.contact-area {
+	    width: 90%;
+	}
+}
+
+@media only screen and (max-width: 520px){
+	
+}
 
 
 
