@@ -1,13 +1,13 @@
-//smooth scroll
 $(document).ready(function(){
-  //adds selected class to nav menu
+  //toggle selected class to nav menu
   $("nav li").hover(function(){
     $(this).toggleClass("selected");
-  });
-
+});
 
   //toggle hamburger menu
-
+  $(".hamburger").on("click", function() {
+    $(".menu").toggleClass("open");
+  });
 
   //contact form
   var contactform =  document.getElementById('contactform');
@@ -28,13 +28,13 @@ $(document).ready(function(){
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 600, function(){
-   
+    }, 600, function(){
+
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
-      });
+    });
     } // End if
-  });
+});
 
   //Back to top of page 
   var offset = 250; 
@@ -42,10 +42,10 @@ $(document).ready(function(){
   $(window).scroll(function() { 
     if($(this).scrollTop() > offset) { 
       $('.back-to-top').fadeIn(duration); 
-    } else { 
+  } else { 
       $('.back-to-top').fadeOut(duration); 
-    } 
-  }); 
+  } 
+}); 
 
   $('.back-to-top').click(function(event) { 
       event.preventDefault(); 
