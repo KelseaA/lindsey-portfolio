@@ -55,8 +55,7 @@ i{
 	height: 33rem;
 }
 
-.content-wrapper,
-.header-nav{
+.content-wrapper{
 	width: 75%;
 	display: flex;
 	flex-direction: row;
@@ -108,8 +107,13 @@ i{
 ********************************/
 
 .header-nav{
-	width: 100%;
-	justify-content: space-between;
+	position: relative;
+}
+
+.main-nav{
+	position: absolute;
+	top: .15rem;
+	right: -.5rem;
 }
 
 .hamburger{
@@ -124,6 +128,7 @@ header{
 header .logo{
 	padding: .25rem .75rem;
 	height: 4rem;
+	float: left;
 }
 
 nav li a{
@@ -137,7 +142,6 @@ header nav{
 
 header ul{
 	margin: 0;
-	margin-right: .5rem;
 	padding-left: 0;
 }
 
@@ -264,14 +268,12 @@ h2{
 	margin-top: 4rem;
 	color: #fff;
 	font-size: 1.25rem;
-	clear: both;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
 }
 
 .skill-point{
 	text-align: center;
+	width: 25%;
+	float: left;
 }
 
 .skill-icon{
@@ -699,6 +701,10 @@ footer{
 }
 
 @media only screen and (max-width: 620px){
+	.back-to-top{
+		width: 0;
+		height: 0;
+	}
 	.intro-text {
 	    line-height: 1.9rem;
 	    font-size: 1.1rem;
@@ -706,8 +712,14 @@ footer{
 	.intro-image {
 	    width: 18rem;
 	}
-	.skill-icon {
-	    width: 5rem;
+	.skills{
+		height: 37rem;
+	}
+	.skills-text{
+		margin-top: 1rem;
+	}
+	.skill-point{
+		width: 50%;
 	}
 	h5 {
 	    font-size: 1rem;
@@ -734,15 +746,16 @@ footer{
 
 	/*hamburger menu styling*/
 	.main-nav{
-		display: flex;
-		flex-direction: column;
-		align-items: flex-end;
 		text-align: center;
+		width: 100%;
 	}
 	.hamburger{
 		cursor: pointer;
-		padding: 25px 15px;
+		padding: 1.5rem .5rem;
 		display: block;
+		position: absolute;
+		top: 0;
+		right: .5rem;
 	}
 	.line{
 		border-bottom: 4px solid #bbb;
@@ -754,6 +767,13 @@ footer{
 	}
 	nav ul{
 		margin-top: -2px;
+/*		margin-left: -1.9rem;*/
+		width: 100%;
+/*		padding: 0 1.5rem;*/
+		z-index: 999;
+		position: absolute;
+		top: 4.5rem;
+		left: 0;
 	}
 	nav li{
 		width: 100%;
@@ -766,10 +786,27 @@ footer{
 		border-bottom: none;
 		background-color: blue;
 	}
+	.menu{
+		height: 0;
+		overflow: hidden;
+		transition: height 0.3s;
+	}
+
+	.open{
+		height: 255px; 
+	}
 }
 
-@media only screen and (max-width: 520px){
-	
+@media only screen and (max-width: 500px){
+	.intro-image{
+		width: 17rem;
+		box-shadow: -3px -3px 12px #F1F1F1,
+					1rem 1rem 0 #73cfd8;
+	}
+	.banner-rectangle {
+	    top: 6.5rem;
+	    left: 17.5%;
+	}
 }
 
 
