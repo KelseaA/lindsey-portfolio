@@ -12,12 +12,19 @@
 <body>
 	<header class="pages-header">
 		<a href="index.html"><img class="logo" src="images/lba-logo.svg" alt="logo"></a>
-		<nav>
-			<ul>
-				<a href="index.html"><li>Home</li></a>
-				<a class="selected" href="resume.html"><li>Résumé</li></a>
-				<a href="projects.html"><li>Projects</li></a>
-			</ul>
+		<nav class="header-nav">
+			<div class="main-nav">
+				<div href="#" class="hamburger">
+					<div class="line bar1"></div>
+					<div class="line bar2"></div>
+					<div class="line bar3"></div>
+				</div>
+				<ul class="clearfix menu">
+					<li><a class="smooth-scroll-link" href="index.html">Home</a></li>
+					<li><a class="smooth-scroll-link" href="resume.html">Résumé</a></li>
+					<li><a class="smooth-scroll-link" href="projects.html">Projects</a></li>
+				</ul>
+			</div>
 		</nav>
 	</header>
 
@@ -80,7 +87,7 @@
 				</div>
 			</div>
 			<div class="resume-column-2">
-				<div>
+				<div class="resume-lists">
 					<h3>Skills</h3>
 					<ul>
 						<li>Content Editing</li>

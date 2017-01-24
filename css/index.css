@@ -57,6 +57,7 @@ i{
 
 .content-wrapper{
 	width: 75%;
+	max-width: 1366px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -76,7 +77,8 @@ i{
 
 .resume,
 .work-content-wrapper{
-	width: 70%;
+	max-width: 1366px;
+	width: 75%;
 	margin: 0 auto;
 }
 
@@ -106,14 +108,8 @@ i{
 		Header Styling 
 ********************************/
 
-.header-nav{
-	position: relative;
-}
-
 .main-nav{
-	position: absolute;
-	top: .15rem;
-	right: -.5rem;
+	text-align: right;
 }
 
 .hamburger{
@@ -157,9 +153,6 @@ nav li{
 	padding: 1rem .4rem;
 }
 
-/*nav li:hover{
-	border-bottom: 2.5px solid #418CF7;
-}*/
 
 /********************************
 		Banner Styling 
@@ -173,25 +166,26 @@ nav li{
 
 .banner-content-wrapper{
 	position: relative;
+	width: 100%;
+}
+
+.banner-name,
+.banner-rectangle{
+	height: 16rem;
+	width: 13rem;
+	padding: 2rem 2rem;
+	position: absolute;
 }
 
 .banner-name{
-	height: 16rem;
-	width: 13rem;
 	background-color: #fff;
-	padding: 2rem 2rem;
-	position: absolute;
 	top: 5.5rem;
 	left: 18%;
 	z-index: 2;
 }
 
 .banner-rectangle{
-	height: 16rem;
-	width: 13rem;
 	border: 3px solid #fff;
-	padding: 2rem 2rem;
-	position: absolute;
 	top: 7.5rem;
 	left: 20.5%;
 	z-index: 1;
@@ -228,6 +222,7 @@ h2{
 
 .intro-image{
 	width: 18rem;
+	margin-top: 4.5rem;
 	box-shadow: -3px -3px 12px #F1F1F1,
 				2.5rem 2.5rem 0 #73cfd8;
 	align-self: center;
@@ -305,6 +300,7 @@ h5{
 
 .work-header,
 .project-box,
+.project-pages-box,
 .project-sub-header{
 	margin: 0 6% auto;
 }
@@ -326,7 +322,8 @@ h5{
 	border-bottom: 1px solid #333;
 }
 
-.project-box{
+.project-box,
+.project-pages-box{
 	margin-top: 2rem;
 	margin-bottom: 5rem;
 	box-shadow: 3px 3px 12px #F1F1F1;
@@ -461,9 +458,11 @@ input.submit-button{
 	align-items: flex-end;
 }
 
-.email, .number, .linkedin{
+.email,
+.number,
+.linkedin{
 	text-align: center;
-	padding: 1rem;
+	padding: 1rem 0;
 	background-color: #fff;
 	width: 33.3333%;
 	color: #fff;
@@ -497,15 +496,9 @@ footer{
 	background-color: #418CF7;
 }
 
-.pages-header li, .pages-footer{
+.pages-header a, 
+.pages-footer{
 	color: #fff;
-	clear: both;
-}
-
-.pages-header li:hover{
-	color: #333;
-	font-weight: bold;
-	background-color: #418CF7;
 }
 
 .pages-header .selected{
@@ -517,7 +510,14 @@ footer{
 		Projects Page Styling 
 ********************************/
 
-
+.work-column-1,
+.work-column-2,
+.work-column-3{
+	margin-top: 0;
+	display: inline-block;
+	vertical-align: top;
+	width: 33%;
+}
 
 
 /********************************
@@ -533,10 +533,15 @@ footer{
 .resume-header{
 	margin-top: 3.5rem;
 	margin-bottom: 2rem;
+	float: left;
+	width: 20%;
+	font-size: 1.25rem !important;
+	border: none;
+	color: #7ecfd8;
 }
 
 .resume-column-1{
-	max-width: 68%;
+	max-width: 65%;
 	float: left;
 	margin-bottom: 1rem;
 	padding-right: 3rem;
@@ -544,7 +549,7 @@ footer{
 }
 
 .resume-column-2{
-	max-width: 28%;
+	max-width: 35%;
 	float: right;
 }
 
@@ -563,18 +568,11 @@ footer{
 	border-top: 1px solid #418CF7;
 }
 
-.resume-header{
-	float: left;
-	width: 20%;
-	font-size: 1.25rem !important;
-	border: none;
-	color: #7ecfd8;
-}
-
 .resume-info{
 	float: right;
 	width: 75%;
 	padding-left: 1.25rem;
+	padding-right: .25rem;
 }
 
 .resume-info p{
@@ -631,6 +629,10 @@ footer{
 	margin-top: 1.25rem;
 }
 
+.resume-lists h3:first-child{
+	margin-top: 0;
+}
+
 
 /********************************
 		Media Queries 
@@ -646,6 +648,34 @@ footer{
 	.column-3{
 		width: 80%;
 	}
+	.work-column-1,
+	.work-column-2,
+	.work-column-3{
+		width: 32%;
+	}
+	.resume,
+	.work-content-wrapper{
+		width: 85%;
+	}
+	.resume-header{
+		float: none;
+		width: 100%;
+	}
+	.resume-info{
+		float: none;
+		width: 100%;
+	}
+	.resume h3{
+		margin-bottom: 1rem;
+	}
+	.resume-column-1{
+		max-width: 60%;
+	}
+
+	.resume-column-2{
+		max-width: 40%;
+	}
+
 }
 
 @media only screen and (max-width: 955px) {
@@ -668,6 +698,13 @@ footer{
 	}
 	.intro-image {
 	    width: 15rem;
+	}
+	.resume-column-1{
+		max-width: 55%;
+	}
+
+	.resume-column-2{
+		max-width: 45%;
 	}
 }
 
@@ -697,6 +734,33 @@ footer{
 	.intro-image {
 	    width: 23rem;
 	    margin-top: 2rem;
+	}
+	.resume-column-1{
+		border-right: none;
+		padding-right: 0;
+	}
+	.resume-column-2{
+		border-top: 1px solid #418CF7;
+		margin-top: 1.5rem;
+		padding-top: 1rem;
+	}
+	.resume-column-1,
+	.resume-column-2{
+		float: none;
+		max-width: 100%;
+	}
+	.resume-lists{
+		/*margin-bottom: 1rem;*/
+		float: left;
+		width: 33%;
+	}
+	.resume-lists h3{
+		margin-bottom: .35rem;
+	}
+	.work-column-1,
+	.work-column-2,
+	.work-column-3{
+		width: 100%;
 	}
 }
 
@@ -751,49 +815,73 @@ footer{
 	}
 	.hamburger{
 		cursor: pointer;
-		padding: 1.5rem .5rem;
+		padding: 1.2rem .5rem;
 		display: block;
 		position: absolute;
 		top: 0;
 		right: .5rem;
 	}
-	.line{
-		border-bottom: 4px solid #bbb;
-		width: 35px;
-		margin-bottom: 6px;
+	.bar1, .bar2, .bar3 {
+	    width: 35px;
+	    height: 5px;
+	    background-color: #333;
+	    margin: 6px 0;
+	    transition: 0.4s;
 	}
-	.line:last-child{
-		margin-bottom: 0;
+
+	.change .bar1 {
+	    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+	    transform: rotate(-45deg) translate(-9px, 6px) ;
 	}
+
+	.change .bar2 {
+	    opacity: 0;
+	}
+
+	.change .bar3 {
+	    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+	    transform: rotate(45deg) translate(-8px, -8px) ;
+	}
+
 	nav ul{
-		margin-top: -2px;
-/*		margin-left: -1.9rem;*/
-		width: 100%;
-/*		padding: 0 1.5rem;*/
 		z-index: 999;
 		position: absolute;
 		top: 4.5rem;
 		left: 0;
+		right: 0;
 	}
 	nav li{
 		width: 100%;
-		background-color: #bbb;
+		background-color: #F1F1F1;
 		margin: 0;
+	}
+	.pages-header a{
+		color: #333;
+		padding-left: 8rem;
+		padding-right: 8rem;
 	}
 	nav .selected{
 		margin-top: 0;
 		padding: 1rem .4rem;
+		background-color: #418CF7;
+		color: #fff;
 		border-bottom: none;
-		background-color: blue;
+	}
+	.menu .selected{
+		border-bottom: none;
 	}
 	.menu{
 		height: 0;
 		overflow: hidden;
 		transition: height 0.3s;
 	}
-
 	.open{
 		height: 255px; 
+	}
+	.resume-lists{
+		margin-bottom: 1rem;
+		float: none;
+		width: 100%;
 	}
 }
 
@@ -803,9 +891,20 @@ footer{
 		box-shadow: -3px -3px 12px #F1F1F1,
 					1rem 1rem 0 #73cfd8;
 	}
+	.banner-name,
+	.banner-rectangle{
+		height: 14rem;
+		width: 11rem;
+	}
 	.banner-rectangle {
 	    top: 6.5rem;
 	    left: 17.5%;
+	}
+	.work-content-wrapper{
+		width: 95%;
+	}
+	.banner-name h1{
+		font-size: 2rem;
 	}
 }
 

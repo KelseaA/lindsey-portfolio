@@ -10,14 +10,22 @@
 	<link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+
 	<header class="pages-header">
 		<a href="index.html"><img class="logo" src="images/lba-logo.svg" alt="logo"></a>
-		<nav>
-			<ul>
-				<a href="index.html"><li>Home</li></a>
-				<a href="resume.html"><li>Résumé</li></a>
-				<a class="selected" href="#projects.html"><li>Projects</li></a>
-			</ul>
+		<nav class="header-nav">
+			<div class="main-nav">
+				<div href="#" class="hamburger">
+					<div class="line bar1"></div>
+					<div class="line bar2"></div>
+					<div class="line bar3"></div>
+				</div>
+				<ul class="clearfix menu">
+					<li><a class="smooth-scroll-link" href="index.html">Home</a></li>
+					<li><a class="smooth-scroll-link" href="resume.html">Résumé</a></li>
+					<li><a class="smooth-scroll-link" href="projects.html">Projects</a></li>
+				</ul>
+			</div>
 		</nav>
 	</header>
 
@@ -29,8 +37,8 @@
 			</div>
 			<section class="writing-projects">
 				<h3 class="project-sub-header">Writing</h3>
-				<div class="project-box">
-					<div class="column-1">
+				<div class="project-pages-box">
+					<div class="work-column-1">
 						<div class="project">
 							<img class="project-image" src="images/writing-project-12.jpg" alt="...">
 							<a href="http://www.artslant.com/chi/articles/show/46535" target="_blank">
@@ -55,7 +63,7 @@
 						</div>
 					</div>
 
-					<div class="column-2">
+					<div class="work-column-2">
 						<div class="project">
 							<img class="project-image" src="images/writing-project-1.jpg" alt="...">
 							<div class="project-hover-text">
@@ -91,7 +99,7 @@
 						</div>
 					</div>
 
-					<div class="column-3">
+					<div class="work-column-3">
 						<div class="project">
 							<img class="project-image" src="images/writing-project-13.jpg" alt="...">
 							<div class="project-hover-text">

@@ -1,12 +1,18 @@
 $(document).ready(function(){
   //toggle selected class to nav menu
   $("nav li").hover(function(){
-    $(this).toggleClass("selected");
-});
+      $(this).toggleClass("selected");
+  });
 
   //toggle hamburger menu
   $(".hamburger").on("click", function() {
-    $(".menu").toggleClass("open");
+      $(".menu").toggleClass("open");
+      $(this).toggleClass("change");
+  });
+
+  $("nav li").on("click", function(){
+      $(".menu").removeClass("open");
+      $(".hamburger").removeClass("change");
   });
 
   //contact form
