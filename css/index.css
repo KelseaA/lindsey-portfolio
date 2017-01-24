@@ -637,7 +637,7 @@ footer{
 /********************************
 		Media Queries 
 ********************************/
-@media only screen and (max-width: 1250px) {
+@media all and (max-width: 1250px) {
 	.project-box{
 		display: flex;
 		flex-direction: column;
@@ -678,7 +678,7 @@ footer{
 
 }
 
-@media only screen and (max-width: 955px) {
+@media all and (max-width: 955px) {
 	.banner-rectangle {
 	    top: 7.25rem;
 	    left: 21.5%;
@@ -708,7 +708,7 @@ footer{
 	}
 }
 
-@media only screen and (max-width: 825px) {
+@media all and (max-width: 825px) {
 	.content-wrapper{
 		width: 85%;
 	}
@@ -764,7 +764,7 @@ footer{
 	}
 }
 
-@media only screen and (max-width: 620px){
+@media all and (max-width: 620px){
 	.back-to-top{
 		width: 0;
 		height: 0;
@@ -885,7 +885,7 @@ footer{
 	}
 }
 
-@media only screen and (max-width: 500px){
+@media all and (max-width: 500px){
 	.intro-image{
 		width: 17rem;
 		box-shadow: -3px -3px 12px #F1F1F1,
